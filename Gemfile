@@ -9,5 +9,5 @@ gem "rake", "~> 13.0"
 gem "rspec", "~> 3.0"
 gem "rubocop", "~> 1.7"
 gem "vcr"
-gem "webmock", "~> 1.15.0"
+gem "webmock", "~> 3.12.1"
 gem 'dotenv'

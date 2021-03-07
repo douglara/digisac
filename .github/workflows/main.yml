@@ -16,3 +16,6 @@ jobs:
         gem install bundler -v 2.2.7
         bundle install
         bundle exec rake
+    env:
+      ENDPOINT_URL: https://zimobi.com.br
+      ACCESS_TOKEN: A123
