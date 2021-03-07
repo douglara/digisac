@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ENDPOINT_URL>/v1/contacts/9c0007c1-83a5-4d1d-a96e-ee164b1b8f62"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Sun, 07 Mar 2021 18:49:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"32a-T5F+rwoJJr36NqBQJL7ynHjrd34"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"unsubscribed":false,"id":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":true,"hadChat":true,"visible":true,"note":"1234","lastMessageAt":"2021-03-03T19:26:40.000Z","lastMessageId":"d00d776b-4bc4-45ad-b8bd-bd5bb512f363","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"3c244ad2-98af-4285-bf65-8a5c878ad207","personId":null,"defaultDepartmentId":"d5ac4285-9b69-42e3-88bd-a53bebb5b4c8","defaultUserId":"e92d9590-5bb2-40fa-a9dd-2cc2c57a2d76","createdAt":"2021-02-03T14:46:07.765Z","updatedAt":"2021-03-03T19:44:24.053Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":"41996910256","alternativeName":"Douglas
+        Lara","data":{"number":"554196910256"},"lastMessage":null}'
+  recorded_at: Sun, 07 Mar 2021 18:49:53 GMT
+recorded_with: VCR 6.0.0

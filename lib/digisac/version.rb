@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-module Digisac
+class Digisac
   VERSION = "0.1.0"
 end

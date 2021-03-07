@@ -7,8 +7,13 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.2)
+    crack (0.4.5)
+      rexml
     diff-lcs (1.4.4)
+    dotenv (2.7.6)
     faraday (1.3.0)
       faraday-net_http (~> 1.0)
       multipart-post (>= 1.2, < 3)
@@ -18,6 +23,7 @@ GEM
     parallel (1.20.1)
     parser (3.0.0.0)
       ast (~> 2.4.1)
+    public_suffix (4.0.6)
     rainbow (3.0.0)
     rake (13.0.3)
     regexp_parser (2.1.1)
@@ -49,15 +55,22 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
     unicode-display_width (2.0.0)
+    vcr (6.0.0)
+    webmock (1.15.2)
+      addressable (>= 2.2.7)
+      crack (>= 0.3.2)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   digisac!
+  dotenv
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.7)
+  vcr
+  webmock (~> 1.15.0)
 
 BUNDLED WITH
    2.2.7
