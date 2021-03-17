@@ -3,7 +3,9 @@
 require_relative "digisac/version"
 require_relative "digisac/requests"
 require_relative "digisac/contacts"
+require_relative "digisac/messages"
 
+# Wrapper Digisac API
 class Digisac
   def initialize(args = {})
     @endpoint_url = args[:endpoint_url]

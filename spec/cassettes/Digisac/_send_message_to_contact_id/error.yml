@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/messages"
+    body:
+      encoding: UTF-8
+      string: '{"contactId":"f8d0e7af-cbca-4353-8610-bb4f9dee7f66","text":"Hello"}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 17 Mar 2021 03:03:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '117'
+      Connection:
+      - keep-alive
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"75-9xpgpfzfgFn5Pgfrxy+nbcAWGo4"
+    body:
+      encoding: UTF-8
+      string: '{"error":"BadRequestHttpError","message":"Service (2dce8720-e20c-485a-acfe-263c251f7cae)
+        disconnected.","status":400}'
+  recorded_at: Wed, 17 Mar 2021 03:03:31 GMT
+recorded_with: VCR 6.0.0

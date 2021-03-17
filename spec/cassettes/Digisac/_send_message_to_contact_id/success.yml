@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/messages"
+    body:
+      encoding: UTF-8
+      string: '{"contactId":"f8d0e7af-cbca-4353-8610-bb4f9dee7f66","text":"Hello"}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 17 Mar 2021 03:00:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"29d-hJCY+sCZ6eLYKyHoI3DN9OhDt3s"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"a146946c-8c0b-4c4f-83ac-5505e0e077e4","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-03-17T03:00:23.000Z","data":{"ack":0,"isNew":true,"isFirst":false},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"f8d0e7af-cbca-4353-8610-bb4f9dee7f66","fromId":"136c0e9f-dcc8-410b-aa9c-6cfc91c9941a","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":"c4205fbb-f9c0-41b1-9a65-4479817e6ebe","ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
+  recorded_at: Wed, 17 Mar 2021 03:00:25 GMT
+recorded_with: VCR 6.0.0

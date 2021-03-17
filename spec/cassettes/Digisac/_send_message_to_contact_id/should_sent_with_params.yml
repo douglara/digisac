@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/messages"
+    body:
+      encoding: UTF-8
+      string: '{"contactId":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","text":"Hello","dontOpenTicket":true}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 17 Mar 2021 03:04:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"291-zu+PftWBWaQsjFQdTh8EmIB6cXQ"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"91094995-e3f3-4159-a53c-3970bdfb5f89","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-03-17T03:04:43.000Z","data":{"ack":0,"isNew":true,"isFirst":false,"dontOpenTicket":true},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","fromId":"109f6fb6-5e1f-4fd3-acda-b62b0d6dbfdc","serviceId":"3c244ad2-98af-4285-bf65-8a5c878ad207","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":null,"ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
+  recorded_at: Wed, 17 Mar 2021 03:04:44 GMT
+recorded_with: VCR 6.0.0
