@@ -16,7 +16,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      Faraday.post "#{@endpoint_url}#{action}", params, headers
+      Faraday.post "#{@endpoint_url}#{action}", params.to_json, headers
     end
   end
 
@@ -24,7 +24,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      return Faraday.put "#{@endpoint_url}#{action}", params, headers
+      return Faraday.put "#{@endpoint_url}#{action}", params.to_json, headers
     end
   end
 
@@ -32,7 +32,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      Faraday.patch "#{@endpoint_url}#{action}", params, headers
+      Faraday.patch "#{@endpoint_url}#{action}", params.to_json, headers
     end
   end
 
@@ -40,7 +40,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      Faraday.delete "#{@endpoint_url}#{action}", params, headers
+      Faraday.delete "#{@endpoint_url}#{action}", params.to_json, headers
     end
   end
 
@@ -50,6 +50,7 @@ class Digisac
     retries ||= 0
     request = yield
     return { error: parse_body(request), request: request } if request.status == 401
+    return { error: parse_body(request), request: request } if request.status == 400
 
     { ok: parse_body(request), request: request }
   rescue StandardError => e
