@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ENDPOINT_URL>/v1/messages?limit=20&order%5B%5D%5B0%5D=timestamp&order%5B%5D%5B1%5D=DESC&where%5BcontactId%5D=9c0007c1-83a5-4d1d-a96e-ee164b1b8f62&where%5BcreatedAt%5D=2021-03-03T19:26:44.307Z&where%5Bvisible%5D=true"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 17 Mar 2021 21:24:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"3bb-wXQOaiD+rm4x6xp2O9GzXsl/Zlw"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":"d00d776b-4bc4-45ad-b8bd-bd5bb512f363","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-03-03T19:26:40.000Z","data":{"ack":2,"isNew":true,"isFirst":false},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","fromId":"109f6fb6-5e1f-4fd3-acda-b62b0d6dbfdc","serviceId":"3c244ad2-98af-4285-bf65-8a5c878ad207","toId":null,"userId":"e92d9590-5bb2-40fa-a9dd-2cc2c57a2d76","ticketId":"05ebf48d-47b3-4702-89e1-ab0b27fb7c71","ticketUserId":"e92d9590-5bb2-40fa-a9dd-2cc2c57a2d76","ticketDepartmentId":"d5ac4285-9b69-42e3-88bd-a53bebb5b4c8","quotedMessageId":null,"origin":"user","createdAt":"2021-03-03T19:26:44.307Z","updatedAt":"2021-03-03T19:26:47.056Z","deletedAt":null,"text":"Posso
+        te explicar por aqui como funciona?","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}],"total":1,"limit":15,"skip":0,"currentPage":1,"lastPage":1,"from":0,"to":15}'
+  recorded_at: Wed, 17 Mar 2021 21:24:55 GMT
+recorded_with: VCR 6.0.0
