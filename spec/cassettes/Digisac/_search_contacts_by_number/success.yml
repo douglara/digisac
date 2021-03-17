@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: "<ENDPOINT_URL>/v1/contacts?where%5Bdata.number%5D%5B$iLike%5D=%2596910256%25"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Fri, 12 Mar 2021 13:59:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"17f8-Jtj/xiqU/Oepngq6q/S9phllVsw"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"unsubscribed":false,"id":"10403364-ebb1-4552-9e5e-6944f0ececa5","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-03-11T19:13:55.000Z","lastMessageId":"08273390-0957-49a4-8991-3ba653c6a2dd","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-02-26T13:24:07.196Z","updatedAt":"2021-03-12T12:46:11.148Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":"Doug","alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"31e1d224-45c9-4e83-b171-915d203dd34c","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":true,"hadChat":true,"visible":true,"note":"oko2","lastMessageAt":"2021-02-12T14:43:04.000Z","lastMessageId":"d0899d4f-15cc-4f33-ac8c-6aaa8914f3cd","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"b1a410b1-0633-481d-b5b1-aaaeaa1d9cf9","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-02-04T17:30:23.098Z","updatedAt":"2021-03-09T14:03:00.208Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":"<TEST_NUMBER>","alternativeName":"Doug","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"54c68210-ea0a-4b88-b706-4795748105f4","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":true,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-02-25T14:05:46.000Z","lastMessageId":"df85cfd6-e4cf-4958-bc3b-449cedec9b75","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"2ee87d87-f727-413f-bfab-23fcbbb6ca82","personId":null,"defaultDepartmentId":"d5ac4285-9b69-42e3-88bd-a53bebb5b4c8","defaultUserId":null,"createdAt":"2021-02-09T17:48:31.811Z","updatedAt":"2021-02-25T17:46:58.366Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":"<TEST_NUMBER>","alternativeName":"Doug","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"69f231a1-3946-4eb4-8db4-f23826ca2f04","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-02-19T20:28:34.000Z","lastMessageId":"79a2fca6-b470-4155-9d3e-c731041d2a2b","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"36e3d536-67ed-4634-a9fc-7e4745e45b8e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-02-19T20:36:21.236Z","updatedAt":"2021-02-19T20:36:22.615Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":null,"alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":true,"hadChat":true,"visible":true,"note":"1234","lastMessageAt":"2021-03-03T19:26:40.000Z","lastMessageId":"d00d776b-4bc4-45ad-b8bd-bd5bb512f363","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"3c244ad2-98af-4285-bf65-8a5c878ad207","personId":null,"defaultDepartmentId":"d5ac4285-9b69-42e3-88bd-a53bebb5b4c8","defaultUserId":"e92d9590-5bb2-40fa-a9dd-2cc2c57a2d76","createdAt":"2021-02-03T14:46:07.765Z","updatedAt":"2021-03-03T19:44:24.053Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":"<TEST_NUMBER>","alternativeName":"Douglas
+        Lara","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"d69918b7-7794-4512-b002-422cdd11faa8","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-02-08T15:57:56.000Z","lastMessageId":"61911df4-206f-43dc-b9e0-f8332d9f5867","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"30c8846b-10a9-4466-8f9b-2440b3e7fe7f","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-02-08T15:56:08.538Z","updatedAt":"2021-02-08T16:00:45.015Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":null,"alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"f85d8704-9f30-46cf-a9eb-ca38db236a9f","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-02-19T13:50:56.000Z","lastMessageId":"9a6f537b-e9be-464a-bcdf-7f6f1ea238f3","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"832a099c-72fb-4282-ac26-9ebd4abfd1bd","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-02-19T13:02:10.943Z","updatedAt":"2021-02-24T12:45:23.109Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Doug","internalName":null,"alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256"},"lastMessage":null},{"unsubscribed":false,"id":"f8d0e7af-cbca-4353-8610-bb4f9dee7f66","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2021-03-05T13:16:18.000Z","lastMessageId":"9c461fb9-5129-4f19-9c4d-9d4213187b00","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2020-12-15T19:49:59.747Z","updatedAt":"2021-03-05T13:16:19.118Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"<TEST_NUMBER>","internalName":"<TEST_NUMBER>","alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256"},"lastMessage":null}],"total":8,"limit":15,"skip":0,"currentPage":1,"lastPage":1,"from":0,"to":15}'
+  recorded_at: Fri, 12 Mar 2021 13:59:31 GMT
+recorded_with: VCR 6.0.0

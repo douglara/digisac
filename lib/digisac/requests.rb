@@ -1,96 +1,72 @@
 # frozen_string_literal: true
 
-require 'faraday'
+require "faraday"
 
+# Make HTTP Requests
 class Digisac
-  def get_request(action, params={}, headers={})
+  def get_request(action, params = {}, headers = {})
     headers = make_headers(headers)
 
-    begin
-      retries ||= 0
-      request = Faraday.get "#{@endpoint_url}#{action}", params, headers
-      return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 401)
-      return {ok: (JSON.parse(request.body) rescue request.body), request: request}
-    rescue Exception => e
-      if (@retry_timeouts == true && e.response.code != 401)
-        sleep(@retry_timeouts_delay)
-        retry if (retries += 1) < @retry_timeouts_limit
-      end
-      return {error: e}
+    make_request do
+      Faraday.get "#{@endpoint_url}#{action}", params, headers
     end
   end
 
-  def post_request(action, params={}, headers={})
+  def post_request(action, params = {}, headers = {})
     headers = make_headers(headers)
 
-    begin
-      retries ||= 0
-      request = Faraday.post "#{@endpoint_url}#{action}", params, headers
-      return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 401)
-      return {ok: (JSON.parse(request.body) rescue request.body), request: request}
-    rescue Exception => e
-      if (@retry_timeouts == true && e.response.code != 401)
-        sleep(@retry_timeouts_delay)
-        retry if (retries += 1) < @retry_timeouts_limit
-      end
-      return {error: e}
+    make_request do
+      Faraday.post "#{@endpoint_url}#{action}", params, headers
     end
   end
 
-  def put_request(action, params={}, headers={})
+  def put_request(action, params = {}, headers = {})
     headers = make_headers(headers)
 
-    begin
-      retries ||= 0
-      request = Faraday.put "#{@endpoint_url}#{action}", params, headers
-      return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 401)
-      return {ok: (JSON.parse(request.body) rescue request.body), request: request}
-    rescue Exception => e
-      if (@retry_timeouts == true && e.response.code != 401)
-        sleep(@retry_timeouts_delay)
-        retry if (retries += 1) < @retry_timeouts_limit
-      end
-      return {error: e}
+    make_request do
+      return Faraday.put "#{@endpoint_url}#{action}", params, headers
     end
   end
 
-  def path_request(action, params={}, headers={})
+  def path_request(action, params = {}, headers = {})
     headers = make_headers(headers)
 
-    begin
-      retries ||= 0
-      request = Faraday.patch "#{@endpoint_url}#{action}", params, headers
-      return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 401)
-      return {ok: (JSON.parse(request.body) rescue request.body), request: request}
-    rescue Exception => e
-      if (@retry_timeouts == true && e.response.code != 401)
-        sleep(@retry_timeouts_delay)
-        retry if (retries += 1) < @retry_timeouts_limit
-      end
-      return {error: e}
+    make_request do
+      Faraday.patch "#{@endpoint_url}#{action}", params, headers
     end
   end
 
-  def delete_request(action, params={}, headers={})
+  def delete_request(action, params = {}, headers = {})
     headers = make_headers(headers)
 
-    begin
-      retries ||= 0
-      request = Faraday.delete "#{@endpoint_url}#{action}", params, headers
-      return {error: (JSON.parse(request.body) rescue request.body), request: request} if (request.status == 401)
-      return {ok: (JSON.parse(request.body) rescue request.body), request: request}
-    rescue Exception => e
-      if (@retry_timeouts == true && e.response.code != 401)
-        sleep(@retry_timeouts_delay)
-        retry if (retries += 1) < @retry_timeouts_limit
-      end
-      return {error: e}
+    make_request do
+      Faraday.delete "#{@endpoint_url}#{action}", params, headers
     end
   end
 
   private
 
+  def make_request
+    retries ||= 0
+    request = yield
+    return { error: parse_body(request), request: request } if request.status == 401
+
+    { ok: parse_body(request), request: request }
+  rescue StandardError => e
+    if @retry_timeouts == true && e.response.code != 401
+      sleep(@retry_timeouts_delay)
+      retry if (retries += 1) < @retry_timeouts_limit
+    end
+    { error: e }
+  end
+
+  def parse_body(request)
+    JSON.parse(request.body)
+  rescue StandardError
+    request.body
+  end
+
   def make_headers(headers)
-    headers.merge({'Authorization': "Bearer #{@access_token}", 'Content-Type': 'application/json'})
+    headers.merge({ 'Authorization': "Bearer #{@access_token}", 'Content-Type': "application/json" })
   end
 end
