@@ -17,4 +17,24 @@ RSpec.describe Digisac do
       expect(request[:ok]["data"][0]).to include("tags")
     end
   end
+
+  describe "create_contact", :vcr do
+    context "valid contact" do
+      it "with 9 digits" do
+        expect(subject.create_contact("41996910256", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:ok)
+      end
+      it "with 8 digits" do
+        expect(subject.create_contact("4196910256", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:ok)
+      end
+
+      it "with params" do
+        expect(subject.create_contact("41996910256", "df91e9f9-1313-49fa-95ca-daa4061e604e",
+                                      { 'internalName': "Test" })).to include(:ok)
+      end
+    end
+
+    it "invalid contact" do
+      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:error)
+    end
+  end
 end

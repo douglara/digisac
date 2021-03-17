@@ -8,4 +8,17 @@ class Digisac
 
     get_request("/v1/contacts", params)
   end
+
+  def create_contact(number, service_id, params = {})
+    params.merge!({ 'number': "55#{number}", 'serviceId': service_id })
+    params.merge!({ 'internalName': number }) unless params.key?(:internalName)
+
+    request = post_request("/v1/contacts", params)
+
+    if request.key?(:ok) && request[:ok]["data"]["valid"] != false
+      { ok: request[:ok] }
+    else
+      { error: request[:ok] }
+    end
+  end
 end

@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/contacts"
+    body:
+      encoding: UTF-8
+      string: '{"internalName":"<TEST_NUMBER>","number":"55<TEST_NUMBER>","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Wed, 17 Mar 2021 10:18:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"2c5-0Yilpg4L8Z9zC6gdG7SZ5oVnFkE"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"unsubscribed":false,"id":"dd0181a3-8544-495f-9a2b-055dd71a3bf8","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-03-17T10:18:41.126Z","updatedAt":"2021-03-17T10:18:41.126Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"<TEST_NUMBER>","internalName":"<TEST_NUMBER>","alternativeName":null,"data":{"valid":true,"number":"554196910256","webchat":{}},"lastMessage":null}'
+  recorded_at: Wed, 17 Mar 2021 10:18:41 GMT
+recorded_with: VCR 6.0.0
