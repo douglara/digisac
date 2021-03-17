@@ -19,3 +19,4 @@ jobs:
     env:
       ENDPOINT_URL: https://zimobi.com.br
       ACCESS_TOKEN: A123
+      TEST_NUMBER: 41996910256
