@@ -1,8 +1,14 @@
 # Digisac
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/digisac`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Gem is basic http wrapper from Digisac API
 
-TODO: Delete this and the text above, and describe your gem
+Original documentation: http://digisac-docs.s3-website-us-west-1.amazonaws.com/
+
+# Requirements
+
+- You need Digisac service
+- Generate API Access Token
+- API URL, usually: `https://BUSINESS_NAME-api.digisac.com.br`
 
 ## Installation
 
@@ -22,13 +28,46 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First need to instance the client:
+```ruby
+api = Digisac.new({ access_token: "YOU_ACCESS_TOKEN", endpoint_url: "YOU_API_ENDPOINT" })
+```
 
-## Development
+## Methods
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+##### Generics
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+    * api.get_request("/API_PATH", params={}, headers={})
+      -> Make get request.
+      -> Example: api.get_request("/v1/messages", {'where[contactId]': '1234'})
+
+    * api.post_request("/API_PATH", params={}, headers={})
+      -> Make post request.
+
+    * api.put_request("/API_PATH", params={}, headers={})
+      -> Make put request.
+
+    * api.patch_request("/API_PATH", params={}, headers={})
+      -> Make patch request.
+
+    * api.head_request("/API_PATH", params={}, headers={})
+      -> Make head request.
+
+    * api.delete_request("/API_PATH", params={}, headers={})
+      -> Make delete request.
+
+
+##### Messages
+
+    * api.send_message_to_contact_id("CONTACT_ID", "MESSAGE")
+      -> Send contact message
+    * api.send_message_to_contact_id("CONTACT_ID", "MESSAGE", {'file_url': 'https://miro.medium.com/proxy/1*sZSVVtdP9TE3mUoGh4GoYA.png'})
+      -> Send contact message with file
+
+    * api.get_contact_messages("CONTACT_ID")
+      -> Get last messages the contact
+
 
 ## Contributing
 
