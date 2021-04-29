@@ -40,7 +40,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      Faraday.delete "#{@endpoint_url}#{action}", params.to_json, headers
+      Faraday.delete "#{@endpoint_url}#{action}", nil, headers
     end
   end
 

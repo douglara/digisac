@@ -21,4 +21,14 @@ class Digisac
       { error: request[:ok] }
     end
   end
+
+  def delete_contact(contact_id)
+    request = delete_request("/v1/contacts/#{contact_id}")
+
+    if request.key?(:ok)
+      { ok: request[:ok] }
+    else
+      { error: request[:ok] }
+    end
+  end
 end

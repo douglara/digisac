@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: "<ENDPOINT_URL>/v1/contacts/31e1d224-45c9-4e83-b171-915d203dd34c"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 29 Apr 2021 19:57:07 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '2'
+      Connection:
+      - keep-alive
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+    body:
+      encoding: UTF-8
+      string: OK
+  recorded_at: Thu, 29 Apr 2021 19:57:07 GMT
+recorded_with: VCR 6.0.0
