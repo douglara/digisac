@@ -10,4 +10,10 @@ VCR.configure do |config|
   config.filter_sensitive_data("<ENDPOINT_URL>") { ENV["ENDPOINT_URL"] }
   config.filter_sensitive_data("<ACCESS_TOKEN>") { ENV["ACCESS_TOKEN"] }
   config.filter_sensitive_data("<TEST_NUMBER>") { ENV["TEST_NUMBER"] }
+
+  if ENV['VCR_MODE'] == 'rec'
+    config.default_cassette_options = {
+      :record => :all
+    }  
+  end
 end
