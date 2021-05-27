@@ -6,6 +6,8 @@ require 'mimemagic'
 # Send messages
 class Digisac
   def send_message_to_contact_id(contact_id, text, params = nil)
+    params = params.transform_keys(&:to_sym) unless params.nil?
+
     body_params = {
       'contactId': contact_id,
       'text': text
@@ -24,6 +26,8 @@ class Digisac
   end
 
   def get_contact_messages(contact_id, params = nil)
+    params = params.transform_keys(&:to_sym) unless params.nil?
+
     url_params = {
       'where[contactId]': contact_id,
       'where[visible]': true,

@@ -5,7 +5,7 @@ http_interactions:
     uri: "<ENDPOINT_URL>/v1/messages"
     body:
       encoding: UTF-8
-      string: '{"contactId":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","text":"Hello","dontOpenTicket":true}'
+      string: '{"contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","text":"Hello","dontOpenTicket":true}'
     headers:
       User-Agent:
       - Faraday v1.3.0
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Wed, 17 Mar 2021 03:04:44 GMT
+      - Thu, 27 May 2021 16:56:34 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,119 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"291-zu+PftWBWaQsjFQdTh8EmIB6cXQ"
+      - W/"2b3-6doB5Dy/uDZ9BW4wUekayczOgvg"
     body:
       encoding: ASCII-8BIT
-      string: '{"id":"91094995-e3f3-4159-a53c-3970bdfb5f89","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-03-17T03:04:43.000Z","data":{"ack":0,"isNew":true,"isFirst":false,"dontOpenTicket":true},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"9c0007c1-83a5-4d1d-a96e-ee164b1b8f62","fromId":"109f6fb6-5e1f-4fd3-acda-b62b0d6dbfdc","serviceId":"3c244ad2-98af-4285-bf65-8a5c878ad207","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":null,"ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
-  recorded_at: Wed, 17 Mar 2021 03:04:44 GMT
+      string: '{"id":"2d151d3f-4e0c-43c1-8088-dfee39be6c4c","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-05-27T16:56:34.000Z","data":{"ack":0,"isNew":true,"isFirst":false,"dontOpenTicket":true},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","fromId":"136c0e9f-dcc8-410b-aa9c-6cfc91c9941a","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":"b14400d5-84a4-480d-af2d-1f73f9b551cc","ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
+  recorded_at: Thu, 27 May 2021 16:56:34 GMT
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/messages"
+    body:
+      encoding: UTF-8
+      string: '{"contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","text":"Hello","dontOpenTicket":true}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 27 May 2021 16:56:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"2b3-vd52psHdFy8kYpDSdGSdITCOsUY"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"c82537ab-b72d-4674-a673-cdce5083e9da","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-05-27T16:56:35.000Z","data":{"ack":0,"isNew":true,"isFirst":false,"dontOpenTicket":true},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","fromId":"136c0e9f-dcc8-410b-aa9c-6cfc91c9941a","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":"b14400d5-84a4-480d-af2d-1f73f9b551cc","ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
+  recorded_at: Thu, 27 May 2021 16:56:35 GMT
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/messages"
+    body:
+      encoding: UTF-8
+      string: '{"contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","text":"Hello","dontOpenTicket":true}'
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Thu, 27 May 2021 16:56:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"2b3-Bzu2lQlla/XUSi1eCOsd7UP4fH4"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":"0ded6f88-419b-44c7-90a1-297fb22e27d5","isFromMe":true,"sent":true,"type":"chat","timestamp":"2021-05-27T16:56:36.000Z","data":{"ack":0,"isNew":true,"isFirst":false,"dontOpenTicket":true},"visible":true,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","contactId":"46d74e7e-e9d2-4dc0-9071-8621999f311d","fromId":"136c0e9f-dcc8-410b-aa9c-6cfc91c9941a","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","toId":null,"userId":"055456d2-c6a4-44cb-9166-68e98d31a0b5","ticketId":"b14400d5-84a4-480d-af2d-1f73f9b551cc","ticketUserId":null,"ticketDepartmentId":null,"quotedMessageId":null,"origin":"user","text":"Hello","obfuscated":false,"files":null,"quotedMessage":null,"isFromBot":false}'
+  recorded_at: Thu, 27 May 2021 16:56:36 GMT
 recorded_with: VCR 6.0.0

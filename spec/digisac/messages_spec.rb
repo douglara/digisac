@@ -11,8 +11,12 @@ RSpec.describe Digisac do
     end
 
     it "should sent with params" do
-      expect(subject.send_message_to_contact_id("9c0007c1-83a5-4d1d-a96e-ee164b1b8f62", "Hello",
+      expect(subject.send_message_to_contact_id(ENV["CONTACT_ID"], "Hello",
                                                 { 'dontOpenTicket': true })).to include(:ok)
+      expect(subject.send_message_to_contact_id(ENV["CONTACT_ID"], "Hello",
+        { 'dontOpenTicket' => true })).to include(:ok)
+      expect(subject.send_message_to_contact_id(ENV["CONTACT_ID"], "Hello",
+        { :dontOpenTicket => true })).to include(:ok)
     end
 
     it 'send picture' do
