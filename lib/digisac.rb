@@ -4,6 +4,7 @@ require_relative "digisac/version"
 require_relative "digisac/requests"
 require_relative "digisac/contacts"
 require_relative "digisac/messages"
+require_relative "digisac/contact/tags"
 
 # Wrapper Digisac API
 class Digisac

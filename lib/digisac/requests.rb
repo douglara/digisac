@@ -24,7 +24,7 @@ class Digisac
     headers = make_headers(headers)
 
     make_request do
-      return Faraday.put "#{@endpoint_url}#{action}", params.to_json, headers
+      Faraday.put "#{@endpoint_url}#{action}", params.to_json, headers
     end
   end
 
