@@ -5,10 +5,10 @@ http_interactions:
     uri: "<ENDPOINT_URL>/v1/contacts"
     body:
       encoding: UTF-8
-      string: '{"internalName":"99999999999","number":"5599999999999","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
+      string: '{"number":"5599999999999","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","internalName":"99999999999"}'
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Wed, 17 Mar 2021 10:23:03 GMT
+      - Tue, 22 Mar 2022 17:14:01 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,10 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2c7-0jS+jul5RhewYoQMRDJu3UggLs4"
+      - W/"486-xk6Z3Q8EDvgpYTMkE6PQ4W/QjAk"
     body:
       encoding: ASCII-8BIT
-      string: '{"unsubscribed":false,"id":"8c98754b-2f26-4acc-90b3-f2396496617a","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-03-17T10:23:03.131Z","updatedAt":"2021-03-17T10:23:03.131Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"99999999999","internalName":"99999999999","alternativeName":null,"data":{"valid":false,"number":"5599999999999","webchat":{}},"lastMessage":null}'
-  recorded_at: Wed, 17 Mar 2021 10:23:03 GMT
+      string: !binary |-
+        eyJ1bnN1YnNjcmliZWQiOmZhbHNlLCJpZCI6IjhjOTg3NTRiLTJmMjYtNGFjYy05MGIzLWYyMzk2NDk2NjE3YSIsImlzTWUiOmZhbHNlLCJpc0dyb3VwIjpmYWxzZSwiaXNCcm9hZGNhc3QiOmZhbHNlLCJ1bnJlYWQiOjAsImlzU2lsZW5jZWQiOmZhbHNlLCJpc015Q29udGFjdCI6ZmFsc2UsImhhZENoYXQiOmZhbHNlLCJ2aXNpYmxlIjp0cnVlLCJub3RlIjoie1xuICBcImZpcnN0X25hbWVcIjogXCJGaWxpcGVcIixcbiAgXCJsYXN0X2xlYXNlX2FwcHJvYWNoXCI6IHtcbiAgICBcImxpc3Rpbmdfc3RhdHVzXCI6IFwiaW5hY3RpdmVcIixcbiAgICBcInN1Y2Nlc3NfZmVlXCI6IHRydWUsXG4gICAgXCJ2aXNpdF9pbnRlbnRpb25zX2NvdW50XCI6IDAsXG4gICAgXCJ2aXNpdFwiOiBmYWxzZSxcbiAgICBcInVuaXF1ZV9saXN0aW5nX2xpbmtcIjogXCJodHRwczovL2FwcDMuemltb2JpLmNvbS5ici9zLzliZDVhM1wiLFxuICAgIFwibGFuZGxvcmRcIjoge1xuICAgICAgXCJmdWxsX25hbWVcIjogXCJTZWJhc3Rpw6NvIFNpcXVlaXJhIGRvcyBTYW50b3NcIixcbiAgICAgIFwicGhvbmVcIjogXCI0MTk5OTk1MjQ1OFwiXG4gICAgfVxuICB9LFxuICBcImxlYXNlX2FwcHJvYWNoZXNcIjogMVxufSIsImxhc3RNZXNzYWdlQXQiOm51bGwsImxhc3RNZXNzYWdlSWQiOm51bGwsImFjY291bnRJZCI6IjJjNDJiZmQyLTFiOGUtNDdjNi1hYjk4LWEyZjgxOWU1YWM4ZSIsInNlcnZpY2VJZCI6ImRmOTFlOWY5LTEzMTMtNDlmYS05NWNhLWRhYTQwNjFlNjA0ZSIsInBlcnNvbklkIjpudWxsLCJkZWZhdWx0RGVwYXJ0bWVudElkIjoiNDIxMTk3ODgtOGYzZS00ODk4LWJmNzAtNDVjZjVjNTk4ZGE4IiwiZGVmYXVsdFVzZXJJZCI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMS0wMy0xN1QxMDoyMzowMy4xMzFaIiwidXBkYXRlZEF0IjoiMjAyMi0wMy0yMlQxNzoxNDowMS44OTdaIiwiZGVsZXRlZEF0IjpudWxsLCJzdGF0dXMiOiJvZmZsaW5lIiwibGFzdENvbnRhY3RNZXNzYWdlQXQiOm51bGwsIm5hbWUiOiI5OTk5OTk5OTk5OSIsImludGVybmFsTmFtZSI6Ijk5OTk5OTk5OTk5IiwiYWx0ZXJuYXRpdmVOYW1lIjpudWxsLCJkYXRhIjp7InZhbGlkIjpmYWxzZSwibnVtYmVyIjoiNTU5OTk5OTk5OTk5OSIsIndlYmNoYXQiOnt9fSwibGFzdE1lc3NhZ2UiOm51bGx9
+  recorded_at: Tue, 22 Mar 2022 17:14:01 GMT
 recorded_with: VCR 6.0.0
