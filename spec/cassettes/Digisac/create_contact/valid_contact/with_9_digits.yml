@@ -5,10 +5,10 @@ http_interactions:
     uri: "<ENDPOINT_URL>/v1/contacts"
     body:
       encoding: UTF-8
-      string: '{"internalName":"<TEST_NUMBER>","number":"55<TEST_NUMBER>","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
+      string: '{"number":"5541996910256","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","internalName":"41996910256"}'
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Wed, 17 Mar 2021 10:18:41 GMT
+      - Tue, 12 Apr 2022 18:38:26 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,10 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2c5-0Yilpg4L8Z9zC6gdG7SZ5oVnFkE"
+      - W/"321-23HAo7Egik8t4VeBn44QJe8JcFo"
     body:
       encoding: ASCII-8BIT
-      string: '{"unsubscribed":false,"id":"dd0181a3-8544-495f-9a2b-055dd71a3bf8","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-03-17T10:18:41.126Z","updatedAt":"2021-03-17T10:18:41.126Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"<TEST_NUMBER>","internalName":"<TEST_NUMBER>","alternativeName":null,"data":{"valid":true,"number":"554196910256","webchat":{}},"lastMessage":null}'
-  recorded_at: Wed, 17 Mar 2021 10:18:41 GMT
+      string: '{"unsubscribed":false,"id":"1b7ec4a4-f227-4b5e-ae55-3c80fca4ec7e","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2022-02-08T18:02:02.000Z","lastMessageId":"a34b3205-d3f3-4b03-912d-a61cbdf424cc","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":"42119788-8f3e-4898-bf70-45cf5c598da8","defaultUserId":null,"createdAt":"2022-03-22T17:00:52.091Z","updatedAt":"2022-04-12T18:38:26.197Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"41996910256","internalName":"41996910256","alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256","unread":false},"lastMessage":null}'
+  recorded_at: Tue, 12 Apr 2022 18:38:26 GMT
 recorded_with: VCR 6.0.0

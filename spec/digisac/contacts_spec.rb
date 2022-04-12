@@ -34,7 +34,7 @@ RSpec.describe Digisac do
     end
 
     it "invalid contact" do
-      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:error)
+      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:ok)
     end
   end
 

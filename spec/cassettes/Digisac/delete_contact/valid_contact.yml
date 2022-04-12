@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.4.1
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -19,17 +19,17 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 500
+      message: Internal Server Error
     headers:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Thu, 29 Apr 2021 19:57:07 GMT
+      - Tue, 12 Apr 2022 18:38:42 GMT
       Content-Type:
-      - text/plain; charset=utf-8
+      - application/json; charset=utf-8
       Content-Length:
-      - '2'
+      - '80'
       Connection:
       - keep-alive
       X-Dns-Prefetch-Control:
@@ -49,9 +49,9 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      - W/"50-52WPjklOoh7Vxpd+3mQTQhbPeBE"
     body:
       encoding: UTF-8
-      string: OK
-  recorded_at: Thu, 29 Apr 2021 19:57:07 GMT
+      string: '{"error":"HttpError","message":"Cannot read property ''id'' of null","status":500}'
+  recorded_at: Tue, 12 Apr 2022 18:38:42 GMT
 recorded_with: VCR 6.0.0

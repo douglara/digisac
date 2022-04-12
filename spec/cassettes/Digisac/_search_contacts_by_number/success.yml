@@ -117,4 +117,80 @@ http_interactions:
       string: !binary |-
         eyJkYXRhIjpbeyJ1bnN1YnNjcmliZWQiOmZhbHNlLCJpZCI6ImRmYTU3MzM2LTAzMDgtNGU0Yi1iM2UyLTM2OTQxNGY2YzJiNCIsImlzTWUiOmZhbHNlLCJpc0dyb3VwIjpmYWxzZSwiaXNCcm9hZGNhc3QiOmZhbHNlLCJ1bnJlYWQiOjAsImlzU2lsZW5jZWQiOmZhbHNlLCJpc015Q29udGFjdCI6ZmFsc2UsImhhZENoYXQiOmZhbHNlLCJ2aXNpYmxlIjp0cnVlLCJub3RlIjoie1xuICBcImZpcnN0X25hbWVcIjogXCJEb3VnXCIsXG4gIFwibGFzdF9sZWFzZV9hcHByb2FjaFwiOiB7XG4gICAgXCJsaXN0aW5nX3N0YXR1c1wiOiBcImFjdGl2ZVwiLFxuICAgIFwic3VjY2Vzc19mZWVcIjogdHJ1ZSxcbiAgICBcInZpc2l0X2ludGVudGlvbnNfY291bnRcIjogMCxcbiAgICBcInZpc2l0XCI6IGZhbHNlLFxuICAgIFwidW5pcXVlX2xpc3RpbmdfbGlua1wiOiBcImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMS9zL2QyMjM2ZVwiLFxuICAgIFwibGFuZGxvcmRcIjoge1xuICAgICAgXCJmdWxsX25hbWVcIjogXCJHcsOsbWEgV29ybXRvbmd1ZVwiLFxuICAgICAgXCJwaG9uZVwiOiBcIjQxOTk4NTMzMTAzXCJcbiAgICB9XG4gIH0sXG4gIFwibGVhc2VfYXBwcm9hY2hlc1wiOiAxXG59IiwibGFzdE1lc3NhZ2VBdCI6bnVsbCwibGFzdE1lc3NhZ2VJZCI6bnVsbCwiYWNjb3VudElkIjoiMmM0MmJmZDItMWI4ZS00N2M2LWFiOTgtYTJmODE5ZTVhYzhlIiwic2VydmljZUlkIjoiMmRjZTg3MjAtZTIwYy00ODVhLWFjZmUtMjYzYzI1MWY3Y2FlIiwicGVyc29uSWQiOm51bGwsImRlZmF1bHREZXBhcnRtZW50SWQiOiI0NGE5NDYyOC0yMGNkLTRmYzMtOTI1Yi02MGJhMDhjZTcxMTQiLCJkZWZhdWx0VXNlcklkIjpudWxsLCJjcmVhdGVkQXQiOiIyMDIyLTAzLTE0VDE0OjI3OjE1Ljk3NFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAzLTE0VDE0OjI3OjE1Ljk3NFoiLCJkZWxldGVkQXQiOm51bGwsInN0YXR1cyI6Im9mZmxpbmUiLCJsYXN0Q29udGFjdE1lc3NhZ2VBdCI6bnVsbCwibmFtZSI6Ijc4OCAtIERvdWcgLSBSU3BlYyAtIDxURVNUX05VTUJFUj4gLSB7XCJsZWFzZV9hcHByb2FjaF9pZFwiOjk0fSIsImludGVybmFsTmFtZSI6Ijc4OCAtIERvdWcgLSBSU3BlYyAtIDxURVNUX05VTUJFUj4gLSB7XCJsZWFzZV9hcHByb2FjaF9pZFwiOjk0fSIsImFsdGVybmF0aXZlTmFtZSI6bnVsbCwiZGF0YSI6eyJ2YWxpZCI6dHJ1ZSwibnVtYmVyIjoiNTU8VEVTVF9OVU1CRVI+Iiwid2ViY2hhdCI6e319LCJsYXN0TWVzc2FnZSI6bnVsbH1dLCJ0b3RhbCI6MSwibGltaXQiOjE1LCJza2lwIjowLCJjdXJyZW50UGFnZSI6MSwibGFzdFBhZ2UiOjEsImZyb20iOjAsInRvIjoxNX0=
   recorded_at: Mon, 14 Mar 2022 18:47:12 GMT
+- request:
+    method: get
+    uri: "<ENDPOINT_URL>/v1/contacts?where%5Bdata.number%5D%5B$iLike%5D=%2530149853"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.1
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Tue, 12 Apr 2022 18:38:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"f3c-uPsaB2bGI9zr2d1YggVvy1t3DU4"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"unsubscribed":false,"id":"5e1c6d28-78e2-4701-bead-375c00117f98","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-02T03:01:09.118Z","updatedAt":"2022-04-12T18:24:40.855Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null},{"unsubscribed":false,"id":"6f004859-ef3c-4bcc-bb11-1c03863c5f92","isMe":false,"isGroup":false,"isBroadcast":false,"unread":1,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":"2022-04-12T17:22:28.000Z","lastMessageId":"a6dcf9ab-1804-4a3d-8408-9e63fa2588e6","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"b250f0f3-f1ec-42ed-bd23-c3029bb83d00","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-01T16:53:28.119Z","updatedAt":"2022-04-12T18:24:42.747Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null},{"unsubscribed":false,"id":"7ba17162-c51d-4cf4-8d81-c48ae5edd1ab","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":"2022-04-01T16:55:11.000Z","lastMessageId":"7ca76adb-ea7d-4708-9718-b1c05f1293da","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"92084ded-4c44-4696-b690-2771cf73e838","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-01T16:53:38.434Z","updatedAt":"2022-04-12T18:24:44.103Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null}],"total":3,"limit":15,"skip":0,"currentPage":1,"lastPage":1,"from":0,"to":15}'
+  recorded_at: Tue, 12 Apr 2022 18:38:17 GMT
 recorded_with: VCR 6.0.0
