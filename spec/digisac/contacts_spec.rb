@@ -5,7 +5,7 @@ RSpec.describe Digisac do
     Digisac.new({ access_token: ENV["ACCESS_TOKEN"], endpoint_url: ENV["ENDPOINT_URL"] })
   end
 
-  describe "#search_contacts_by_number", :vcr do
+  describe "#search_contacts_by_number", vcr: { match_requests_on: [:method] } do
     it "success" do
       expect(subject.search_contacts_by_number(ENV["TEST_NUMBER"])).to include(:ok)
     end
