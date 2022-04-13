@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Tue, 22 Mar 2022 17:14:01 GMT
+      - Tue, 12 Apr 2022 18:38:24 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,10 +50,14 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"486-xk6Z3Q8EDvgpYTMkE6PQ4W/QjAk"
+      - W/"477-bxURfzoyOijtVkt822EURrXsaGI"
     body:
       encoding: ASCII-8BIT
-      string: !binary |-
-        eyJ1bnN1YnNjcmliZWQiOmZhbHNlLCJpZCI6IjhjOTg3NTRiLTJmMjYtNGFjYy05MGIzLWYyMzk2NDk2NjE3YSIsImlzTWUiOmZhbHNlLCJpc0dyb3VwIjpmYWxzZSwiaXNCcm9hZGNhc3QiOmZhbHNlLCJ1bnJlYWQiOjAsImlzU2lsZW5jZWQiOmZhbHNlLCJpc015Q29udGFjdCI6ZmFsc2UsImhhZENoYXQiOmZhbHNlLCJ2aXNpYmxlIjp0cnVlLCJub3RlIjoie1xuICBcImZpcnN0X25hbWVcIjogXCJGaWxpcGVcIixcbiAgXCJsYXN0X2xlYXNlX2FwcHJvYWNoXCI6IHtcbiAgICBcImxpc3Rpbmdfc3RhdHVzXCI6IFwiaW5hY3RpdmVcIixcbiAgICBcInN1Y2Nlc3NfZmVlXCI6IHRydWUsXG4gICAgXCJ2aXNpdF9pbnRlbnRpb25zX2NvdW50XCI6IDAsXG4gICAgXCJ2aXNpdFwiOiBmYWxzZSxcbiAgICBcInVuaXF1ZV9saXN0aW5nX2xpbmtcIjogXCJodHRwczovL2FwcDMuemltb2JpLmNvbS5ici9zLzliZDVhM1wiLFxuICAgIFwibGFuZGxvcmRcIjoge1xuICAgICAgXCJmdWxsX25hbWVcIjogXCJTZWJhc3Rpw6NvIFNpcXVlaXJhIGRvcyBTYW50b3NcIixcbiAgICAgIFwicGhvbmVcIjogXCI0MTk5OTk1MjQ1OFwiXG4gICAgfVxuICB9LFxuICBcImxlYXNlX2FwcHJvYWNoZXNcIjogMVxufSIsImxhc3RNZXNzYWdlQXQiOm51bGwsImxhc3RNZXNzYWdlSWQiOm51bGwsImFjY291bnRJZCI6IjJjNDJiZmQyLTFiOGUtNDdjNi1hYjk4LWEyZjgxOWU1YWM4ZSIsInNlcnZpY2VJZCI6ImRmOTFlOWY5LTEzMTMtNDlmYS05NWNhLWRhYTQwNjFlNjA0ZSIsInBlcnNvbklkIjpudWxsLCJkZWZhdWx0RGVwYXJ0bWVudElkIjoiNDIxMTk3ODgtOGYzZS00ODk4LWJmNzAtNDVjZjVjNTk4ZGE4IiwiZGVmYXVsdFVzZXJJZCI6bnVsbCwiY3JlYXRlZEF0IjoiMjAyMS0wMy0xN1QxMDoyMzowMy4xMzFaIiwidXBkYXRlZEF0IjoiMjAyMi0wMy0yMlQxNzoxNDowMS44OTdaIiwiZGVsZXRlZEF0IjpudWxsLCJzdGF0dXMiOiJvZmZsaW5lIiwibGFzdENvbnRhY3RNZXNzYWdlQXQiOm51bGwsIm5hbWUiOiI5OTk5OTk5OTk5OSIsImludGVybmFsTmFtZSI6Ijk5OTk5OTk5OTk5IiwiYWx0ZXJuYXRpdmVOYW1lIjpudWxsLCJkYXRhIjp7InZhbGlkIjpmYWxzZSwibnVtYmVyIjoiNTU5OTk5OTk5OTk5OSIsIndlYmNoYXQiOnt9fSwibGFzdE1lc3NhZ2UiOm51bGx9
-  recorded_at: Tue, 22 Mar 2022 17:14:01 GMT
+      string: '{"unsubscribed":false,"id":"8c98754b-2f26-4acc-90b3-f2396496617a","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":"{\n  \"first_name\":
+        \"Teste\",\n  \"last_lease_approach\": {\n    \"listing_status\": \"inactive\",\n    \"success_fee\":
+        true,\n    \"visit_intentions_count\": 0,\n    \"visit\": false,\n    \"unique_listing_link\":
+        \"https://app3.zimobi.com.br/s/0e7a2a\",\n    \"landlord\": {\n      \"full_name\":
+        \"Jeferson Brugger\",\n      \"phone\": \"31975591794\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2021-03-17T10:23:03.131Z","updatedAt":"2022-04-12T18:38:23.681Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"99999999999","internalName":"99999999999","alternativeName":null,"data":{"valid":false,"number":"5599999999999","webchat":{}},"lastMessage":null}'
+  recorded_at: Tue, 12 Apr 2022 18:38:23 GMT
 recorded_with: VCR 6.0.0

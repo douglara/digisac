@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Tue, 22 Mar 2022 17:14:04 GMT
+      - Tue, 12 Apr 2022 18:38:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,10 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2c3-pH0nHT6TvatPGIoTJ8Q7aGKmxR4"
+      - W/"31f-VLuvBreIxwG9SOP/qPB1TxylcJY"
     body:
       encoding: ASCII-8BIT
-      string: '{"unsubscribed":false,"id":"1b7ec4a4-f227-4b5e-ae55-3c80fca4ec7e","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2022-03-22T17:00:52.091Z","updatedAt":"2022-03-22T17:14:04.188Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"4196910256","internalName":"4196910256","alternativeName":null,"data":{"valid":true,"number":"554196910256","webchat":{}},"lastMessage":null}'
-  recorded_at: Tue, 22 Mar 2022 17:14:03 GMT
+      string: '{"unsubscribed":false,"id":"1b7ec4a4-f227-4b5e-ae55-3c80fca4ec7e","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":null,"lastMessageAt":"2022-02-08T18:02:02.000Z","lastMessageId":"a34b3205-d3f3-4b03-912d-a61cbdf424cc","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":"42119788-8f3e-4898-bf70-45cf5c598da8","defaultUserId":null,"createdAt":"2022-03-22T17:00:52.091Z","updatedAt":"2022-04-12T18:38:34.826Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"4196910256","internalName":"4196910256","alternativeName":"+55
+        41 9691-0256","data":{"number":"554196910256","unread":false},"lastMessage":null}'
+  recorded_at: Tue, 12 Apr 2022 18:38:35 GMT
 recorded_with: VCR 6.0.0

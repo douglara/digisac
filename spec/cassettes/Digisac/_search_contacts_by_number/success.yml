@@ -142,7 +142,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Tue, 22 Mar 2022 17:13:59 GMT
+      - Tue, 12 Apr 2022 18:38:17 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -167,16 +167,30 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"543-I4m35Mq1s0HUGnW8jOPS8PpZyws"
+      - W/"f3c-uPsaB2bGI9zr2d1YggVvy1t3DU4"
     body:
       encoding: ASCII-8BIT
-      string: '{"data":[{"unsubscribed":false,"id":"dfa57336-0308-4e4b-b3e2-369414f6c2b4","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
-        \"\",\n  \"last_lease_approach\": {\n    \"listing_status\": \"active\",\n    \"success_fee\":
-        true,\n    \"visit_intentions_count\": 0,\n    \"visit\": false,\n    \"unique_listing_link\":
-        \"https://.herokuapp.com/s/1c83f5\",\n    \"landlord\": {\n      \"full_name\":
-        \"Glorfindel\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
-        1\n}","lastMessageAt":"2022-03-18T19:15:06.000Z","lastMessageId":"94e80de4-688e-4954-90be-a6cb0ed8ffae","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-03-14T14:27:15.974Z","updatedAt":"2022-03-22T13:55:58.049Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"932
-        -  - <TEST_NUMBER> - {\"lease_approach_id\":32}","internalName":"768 -  -
-        <TEST_NUMBER> - {\"lease_approach_id\":88}","alternativeName":"+55 11 93014-9853","data":{"number":"55<TEST_NUMBER>","unread":false},"lastMessage":null}],"total":1,"limit":15,"skip":0,"currentPage":1,"lastPage":1,"from":0,"to":15}'
-  recorded_at: Tue, 22 Mar 2022 17:13:58 GMT
+      string: '{"data":[{"unsubscribed":false,"id":"5e1c6d28-78e2-4701-bead-375c00117f98","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"2dce8720-e20c-485a-acfe-263c251f7cae","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-02T03:01:09.118Z","updatedAt":"2022-04-12T18:24:40.855Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null},{"unsubscribed":false,"id":"6f004859-ef3c-4bcc-bb11-1c03863c5f92","isMe":false,"isGroup":false,"isBroadcast":false,"unread":1,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":"2022-04-12T17:22:28.000Z","lastMessageId":"a6dcf9ab-1804-4a3d-8408-9e63fa2588e6","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"b250f0f3-f1ec-42ed-bd23-c3029bb83d00","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-01T16:53:28.119Z","updatedAt":"2022-04-12T18:24:42.747Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null},{"unsubscribed":false,"id":"7ba17162-c51d-4cf4-8d81-c48ae5edd1ab","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":true,"visible":true,"note":"{\n  \"first_name\":
+        \"\",\n  \"last_lease_approach\": {\n    \"id\": 92,\n    \"deal_id\": null,\n    \"property_id\":
+        174,\n    \"listing_status\": \"active\",\n    \"success_fee\": true,\n    \"visit_intentions_count\":
+        0,\n    \"visit\": false,\n    \"unique_listing_link\": \"https://.herokuapp.com/s/ef0847\",\n    \"landlord\":
+        {\n      \"full_name\": \"Barliman Butterbur\",\n      \"phone\": \"41998533103\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":"2022-04-01T16:55:11.000Z","lastMessageId":"7ca76adb-ea7d-4708-9718-b1c05f1293da","accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"92084ded-4c44-4696-b690-2771cf73e838","personId":null,"defaultDepartmentId":"44a94628-20cd-4fc3-925b-60ba08ce7114","defaultUserId":null,"createdAt":"2022-04-01T16:53:38.434Z","updatedAt":"2022-04-12T18:24:44.103Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"+55
+        11 93014-9853","internalName":"545 -  - <TEST_NUMBER> - {\"lease_approach_id\":92}","alternativeName":"+55
+        11 93014-9853","data":{"number":"55<TEST_NUMBER>"},"lastMessage":null}],"total":3,"limit":15,"skip":0,"currentPage":1,"lastPage":1,"from":0,"to":15}'
+  recorded_at: Tue, 12 Apr 2022 18:38:17 GMT
 recorded_with: VCR 6.0.0

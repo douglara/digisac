@@ -17,7 +17,7 @@ class Digisac
 
     request = post_request("/v1/contacts", params)
 
-    if request.key?(:ok) && request[:ok]["data"]["valid"] != false
+    if request.key?(:ok)
       { ok: request[:ok] }
     else
       { error: request[:ok] }
