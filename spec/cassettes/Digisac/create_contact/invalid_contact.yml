@@ -5,10 +5,10 @@ http_interactions:
     uri: "<ENDPOINT_URL>/v1/contacts"
     body:
       encoding: UTF-8
-      string: '{"internalName":"99999999999","number":"5599999999999","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
+      string: '{"number":"5599999999999","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","internalName":"99999999999"}'
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Wed, 17 Mar 2021 10:23:03 GMT
+      - Mon, 16 May 2022 15:13:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,74 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2c7-0jS+jul5RhewYoQMRDJu3UggLs4"
+      - W/"477-fLyttpHLvD+nHeX2Vx9+CpdgVAU"
     body:
       encoding: ASCII-8BIT
-      string: '{"unsubscribed":false,"id":"8c98754b-2f26-4acc-90b3-f2396496617a","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-03-17T10:23:03.131Z","updatedAt":"2021-03-17T10:23:03.131Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"99999999999","internalName":"99999999999","alternativeName":null,"data":{"valid":false,"number":"5599999999999","webchat":{}},"lastMessage":null}'
-  recorded_at: Wed, 17 Mar 2021 10:23:03 GMT
-recorded_with: VCR 6.0.0
+      string: '{"unsubscribed":false,"id":"8c98754b-2f26-4acc-90b3-f2396496617a","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":"{\n  \"first_name\":
+        \"Teste\",\n  \"last_lease_approach\": {\n    \"listing_status\": \"inactive\",\n    \"success_fee\":
+        true,\n    \"visit_intentions_count\": 0,\n    \"visit\": false,\n    \"unique_listing_link\":
+        \"https://app3.zimobi.com.br/s/0e7a2a\",\n    \"landlord\": {\n      \"full_name\":
+        \"Jeferson Brugger\",\n      \"phone\": \"31975591794\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":"42119788-8f3e-4898-bf70-45cf5c598da8","defaultUserId":null,"createdAt":"2021-03-17T10:23:03.131Z","updatedAt":"2022-05-16T15:13:08.644Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"99999999999","internalName":"99999999999","alternativeName":null,"data":{"valid":false,"number":"5599999999999","webchat":{}},"lastMessage":null}'
+  recorded_at: Mon, 16 May 2022 15:13:08 GMT
+- request:
+    method: post
+    uri: "<ENDPOINT_URL>/v1/contacts"
+    body:
+      encoding: UTF-8
+      string: '{"number":"5599999999999","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","internalName":"99999999999"}'
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 16 May 2022 15:13:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"477-UoLBxxact2L2XqDc8fyT4Dd0vkk"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"unsubscribed":false,"id":"8c98754b-2f26-4acc-90b3-f2396496617a","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":"{\n  \"first_name\":
+        \"Teste\",\n  \"last_lease_approach\": {\n    \"listing_status\": \"inactive\",\n    \"success_fee\":
+        true,\n    \"visit_intentions_count\": 0,\n    \"visit\": false,\n    \"unique_listing_link\":
+        \"https://app3.zimobi.com.br/s/0e7a2a\",\n    \"landlord\": {\n      \"full_name\":
+        \"Jeferson Brugger\",\n      \"phone\": \"31975591794\"\n    }\n  },\n  \"lease_approaches\":
+        1\n}","lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":"42119788-8f3e-4898-bf70-45cf5c598da8","defaultUserId":null,"createdAt":"2021-03-17T10:23:03.131Z","updatedAt":"2022-05-16T15:13:10.762Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"99999999999","internalName":"99999999999","alternativeName":null,"data":{"valid":false,"number":"5599999999999","webchat":{}},"lastMessage":null}'
+  recorded_at: Mon, 16 May 2022 15:13:10 GMT
+recorded_with: VCR 6.1.0

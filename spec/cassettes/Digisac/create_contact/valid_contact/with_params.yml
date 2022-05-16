@@ -5,10 +5,10 @@ http_interactions:
     uri: "<ENDPOINT_URL>/v1/contacts"
     body:
       encoding: UTF-8
-      string: '{"internalName":"Test","number":"55<TEST_NUMBER>","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
+      string: '{"internalName":"Test","number":"5541996910256","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e"}'
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Wed, 17 Mar 2021 10:29:36 GMT
+      - Mon, 16 May 2022 15:13:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -50,9 +50,9 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2b7-nt+Q6n8rAXrtHns2+pW81qbvzFw"
+      - W/"2b7-uyFqasgxGQv87v0V5jbEGlBjG24"
     body:
       encoding: ASCII-8BIT
-      string: '{"unsubscribed":false,"id":"6dc0aa09-5ae1-4fa9-8b6a-a536b6027ba3","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2021-03-17T10:21:29.591Z","updatedAt":"2021-03-17T10:29:36.922Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Test","internalName":"Test","alternativeName":null,"data":{"valid":true,"number":"554196910256","webchat":{}},"lastMessage":null}'
-  recorded_at: Wed, 17 Mar 2021 10:29:36 GMT
-recorded_with: VCR 6.0.0
+      string: '{"unsubscribed":false,"id":"ea0277f1-d719-4f38-8cf6-3f185e5d046f","isMe":false,"isGroup":false,"isBroadcast":false,"unread":0,"isSilenced":false,"isMyContact":false,"hadChat":false,"visible":true,"note":null,"lastMessageAt":null,"lastMessageId":null,"accountId":"2c42bfd2-1b8e-47c6-ab98-a2f819e5ac8e","serviceId":"df91e9f9-1313-49fa-95ca-daa4061e604e","personId":null,"defaultDepartmentId":null,"defaultUserId":null,"createdAt":"2022-05-16T15:04:47.053Z","updatedAt":"2022-05-16T15:13:14.683Z","deletedAt":null,"status":"offline","lastContactMessageAt":null,"name":"Test","internalName":"Test","alternativeName":null,"data":{"valid":true,"number":"554196910256","webchat":{}},"lastMessage":null}'
+  recorded_at: Mon, 16 May 2022 15:13:14 GMT
+recorded_with: VCR 6.1.0

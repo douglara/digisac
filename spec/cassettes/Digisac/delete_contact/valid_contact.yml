@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.3.0
+      - Faraday v1.10.0
       Authorization:
       - Bearer <ACCESS_TOKEN>
       Content-Type:
@@ -19,17 +19,17 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 500
+      message: Internal Server Error
     headers:
       Server:
       - nginx/1.10.3 (Ubuntu)
       Date:
-      - Thu, 29 Apr 2021 19:57:07 GMT
+      - Mon, 16 May 2022 15:13:15 GMT
       Content-Type:
-      - text/plain; charset=utf-8
+      - application/json; charset=utf-8
       Content-Length:
-      - '2'
+      - '80'
       Connection:
       - keep-alive
       X-Dns-Prefetch-Control:
@@ -49,9 +49,63 @@ http_interactions:
       Access-Control-Allow-Credentials:
       - 'true'
       Etag:
-      - W/"2-nOO9QiTIwXgNtWtBJezz8kv3SLc"
+      - W/"50-52WPjklOoh7Vxpd+3mQTQhbPeBE"
     body:
       encoding: UTF-8
-      string: OK
-  recorded_at: Thu, 29 Apr 2021 19:57:07 GMT
-recorded_with: VCR 6.0.0
+      string: '{"error":"HttpError","message":"Cannot read property ''id'' of null","status":500}'
+  recorded_at: Mon, 16 May 2022 15:13:15 GMT
+- request:
+    method: delete
+    uri: "<ENDPOINT_URL>/v1/contacts/31e1d224-45c9-4e83-b171-915d203dd34c"
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.0
+      Authorization:
+      - Bearer <ACCESS_TOKEN>
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - nginx/1.10.3 (Ubuntu)
+      Date:
+      - Mon, 16 May 2022 15:13:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '80'
+      Connection:
+      - keep-alive
+      X-Dns-Prefetch-Control:
+      - 'off'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains
+      X-Download-Options:
+      - noopen
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"50-52WPjklOoh7Vxpd+3mQTQhbPeBE"
+    body:
+      encoding: UTF-8
+      string: '{"error":"HttpError","message":"Cannot read property ''id'' of null","status":500}'
+  recorded_at: Mon, 16 May 2022 15:13:15 GMT
+recorded_with: VCR 6.1.0

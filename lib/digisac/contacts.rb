@@ -18,9 +18,9 @@ class Digisac
     request = post_request("/v1/contacts", params)
 
     if request.key?(:ok) && request[:ok]["data"]["valid"] != false
-      { ok: request[:ok] }
+      { ok: request[:ok], request: request  }
     else
-      { error: request[:ok] }
+      { error: request[:ok], request: request }
     end
   end
 
@@ -28,9 +28,9 @@ class Digisac
     request = delete_request("/v1/contacts/#{contact_id}")
 
     if request.key?(:ok)
-      { ok: request[:ok] }
+      { ok: request[:ok], request: request }
     else
-      { error: request[:ok] }
+      { error: request[:ok], request: request }
     end
   end
 end
