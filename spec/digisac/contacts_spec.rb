@@ -34,13 +34,15 @@ RSpec.describe Digisac do
     end
 
     it "invalid contact" do
-      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:ok)
+      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:error)
+      expect(subject.create_contact("99999999999", "df91e9f9-1313-49fa-95ca-daa4061e604e")).to include(:request)
     end
   end
 
   describe "delete_contact", :vcr do
     it "valid contact" do
       expect(subject.delete_contact("31e1d224-45c9-4e83-b171-915d203dd34c")).to include(:ok)
+      expect(subject.delete_contact("31e1d224-45c9-4e83-b171-915d203dd34c")).to include(:request)
     end
   end
 end
